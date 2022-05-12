@@ -47,3 +47,7 @@ body {
     height: 100%;
     opacity: 0.8;
 }
+
+.hero img:hover {
+  opacity: 1.0;
+}
