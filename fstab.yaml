@@ -1,4 +1,3 @@
 mountpoints:
-  /:
-    url: https://github.com/pkynaston/helix/tree/main/drafts
-    type: github
+/:
+url: https://github.com/pkynaston/helix/tree/main/drafts
