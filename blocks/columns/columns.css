@@ -1,0 +1,70 @@
+.columns > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.columns img {
+  width: 100%;
+}
+
+.columns > div > div {
+  order: 1;
+}
+
+.columns > div > .columns-img-col {
+  order: 0;
+}
+
+.columns > div > .columns-img-col img {
+  display: block;
+}
+
+@media (width >= 900px) {
+  .columns > div {
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .columns > div > div {
+    flex: 1;
+    order: unset;
+  }
+}
+
+/* Table-style columns for feature comparison */
+.columns.table > div {
+  border-bottom: 1px solid #e8e8e8;
+  padding: 8px 0;
+}
+
+.columns.table > div:first-child {
+  background: var(--dark-color);
+  color: white;
+  border-radius: 8px 8px 0 0;
+  padding: 12px 16px;
+}
+
+.columns.table > div:first-child h3 {
+  color: white;
+  margin: 0;
+}
+
+.columns.table > div > div {
+  padding: 10px 16px;
+  font-size: var(--body-font-size-s);
+}
+
+/* Card-style columns */
+.columns h3 {
+  color: var(--accent-color);
+  font-size: var(--heading-font-size-s);
+  margin: 0 0 8px;
+}
+
+.columns p,
+.columns ul {
+  font-size: var(--body-font-size-s);
+  line-height: 1.6;
+}
